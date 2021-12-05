@@ -1,0 +1,63 @@
+User
+    firstname
+    lastname
+    contact number - ID
+    email
+    address[f][One to Many]
+    Orders
+
+Address
+    street
+    pincode
+    city
+    state
+    country
+
+delivery_boy
+    name
+    contact
+    orders [One to Many]
+
+Admin
+    name
+    contact
+
+
+Grocery-Item
+    name
+    price
+    Catagory[f][one-to-one]
+    desc
+    image
+
+Catagory
+    name
+    image
+    desc
+
+    
+
+Order
+    items 
+    user[F][Many to one]
+    Payment[F][One to One]
+    Order date
+    delivery date
+    delivered
+    delivery_boy[F]
+
+
+Cart
+    items
+    user[F][Many to one]
+
+
+Payment
+    amount
+    payment-type[F]
+    transcation-id
+    time
+    
+
+Payment-type
+    name

@@ -13,7 +13,7 @@ Address
     state
     country
 
-delivery_boy
+Staff
     name
     contact
     orders [One to Many]

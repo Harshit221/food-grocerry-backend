@@ -2,7 +2,6 @@ from django.conf import settings
 from django.contrib.auth.backends import BaseBackend
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.models import User
-
 class SettingsBackend(BaseBackend):
 
     def authenticate(self, request, contact_no=None, password=None):

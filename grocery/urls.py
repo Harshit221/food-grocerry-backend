@@ -2,6 +2,6 @@ from django.contrib import admin
 from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/auth/', include('authentication.urls'))
+    path('api/auth/', include('authentication.urls')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
-# {"contact_no": "+919925497584", "first_name": "harshit", "password": "12345678"}
